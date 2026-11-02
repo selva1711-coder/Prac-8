@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Task Sphere</title>
+<style>
+*{
+ box-sizing:border-box;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background-color:violet;
+  margin:0;
+  padding:20px;
+ }
+
+ .container{
+  width:100%;
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+  background-color:white;
+  border:2px solid lightblue;
+  border-radius:10px;
+  }
+
+ h1{
+  color:purple;
+  font-size:15px;
+  }
+
+  p{
+  color:black;
+  font-size:15px;
+  line-height:1.6;
+  text-align:justify;
+  }
+
+  .main-image{
+   width:100%;
+   height:200px;
+   object-fit:cover;
+   border-radius:8px;
+   }
+
+  .layout{
+   display:grid;
+   gap:15px;
+   margin-top:20px;
+  }
+
+  .box{
+    flex:1;
+    min-width:0;
+    padding:15px;
+    border: 1px solid lightgray;
+    background-color:pink;
+    border-radius:8px;
+  }
+
+  .box h3{
+   color:darkblue;
+   }
+
+  .gallery{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    margin-top:15px;
+   }
+
+  .gallery img{
+   width:100%;
+  height:100px;
+  object-fit:cover;
+  border-radius:8px;
+  }
+
+  footer{
+  text-align:center;
+  color:gray;
+  margin-top:20px;
+  }
+ 
+ footer p{
+  text-align:center;
+   }
+
+  @media(max-width:768px){
+  body{
+  padding:15px;
+  }
+
+ .container{
+  padding:15px;
+  }
+
+  .gallery{
+   grid-template-columns:repeat(3,1fr);
+  }
+
+  .gallery img{
+  height:100px;
+  }
+}
+
+  @media(max-width:480px){
+  body{
+  padding:10px;
+  }
+
+.container{
+  padding:12px;
+  }
+
+ h1{
+ font-size:25px;
+  }
+
+h2{
+  font-size:19px;
+ }
+
+ p{
+  font-size:14px;
+  }
+
+.main-image{
+ height:120px;
+}
+
+ .layout{
+  flex-direction:column;
+}
+
+ .gallery{
+  grid-template-columns:repeat(2,1fr);
+  gap:8px;
+ }
+
+ .gallery img{
+  height:120px;
+  }
+
+  .box{
+  width:100%;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Task Sphere</h1>
+
+  <h2>Welcome to Task Sphere</h2>
+    <p>
+    Task Sphere is a smart and user-friendly platform designed to help people manage their daily tasks easily.
+   It helps users organize their work,set deadlines,track progress,and complete their activities on time.
+   Our goal is to make every task simple, organized, and productive.
+  </p>
+
+   <div class="layout">
+    <div class="box">
+   <h3>Task Management</h3>
+    <p>Create and organize your daily tasks , set priorities,and manage your deadlines efficiently</p>
+   </div>
+   <div class="box">
+     <h3>Project Planning</h3>
+      <p>Plan your projects , track your progress, and complete your work step by step </p>
+   </div>
+ </div>
+
+  <h2 class="gallery-title">Responsive Image Gallery</h2>
+
+   <div class="gallery">
+  <img src="C:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 1">
+  <img src="C:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 2">
+  <img src="C:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 3">
+  <img src="C:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 4">
+  <img src="C:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 5">
+  <img src="C:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 6">
+  <img src="C:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 7">
+  <img src="C:\Users\selvarani\Documents\task spheree.jpeg" alt="Task Sphere 8">
+  </div>
+
+<footer>
+<p>
+Task Sphere - Plan , Organize and Achieve!
+</p>
+</footer>
+
+</div>
+
+</body>
+</html>
